@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{7B08AEA6-929F-4332-AC61-2F8B4C132781}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="..\BPR\FaultLocation\FaultLocationDMSPiloto.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR\ModuloTestes\ModuloTestes.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\BPR\SinapToolKit\SinapToolKit.cbproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="FaultLocationDMSPiloto">
+        <MSBuild Projects="..\BPR\FaultLocation\FaultLocationDMSPiloto.cbproj"/>
+    </Target>
+    <Target Name="FaultLocationDMSPiloto:Clean">
+        <MSBuild Projects="..\BPR\FaultLocation\FaultLocationDMSPiloto.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FaultLocationDMSPiloto:Make">
+        <MSBuild Projects="..\BPR\FaultLocation\FaultLocationDMSPiloto.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="ModuloTestes">
+        <MSBuild Projects="..\BPR\ModuloTestes\ModuloTestes.cbproj"/>
+    </Target>
+    <Target Name="ModuloTestes:Clean">
+        <MSBuild Projects="..\BPR\ModuloTestes\ModuloTestes.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ModuloTestes:Make">
+        <MSBuild Projects="..\BPR\ModuloTestes\ModuloTestes.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="SinapToolKit">
+        <MSBuild Projects="..\BPR\SinapToolKit\SinapToolKit.cbproj"/>
+    </Target>
+    <Target Name="SinapToolKit:Clean">
+        <MSBuild Projects="..\BPR\SinapToolKit\SinapToolKit.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SinapToolKit:Make">
+        <MSBuild Projects="..\BPR\SinapToolKit\SinapToolKit.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="FaultLocationDMSPiloto;ModuloTestes;SinapToolKit"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="FaultLocationDMSPiloto:Clean;ModuloTestes:Clean;SinapToolKit:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="FaultLocationDMSPiloto:Make;ModuloTestes:Make;SinapToolKit:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

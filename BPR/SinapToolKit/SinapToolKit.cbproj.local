@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="..\..\..\ProjetoEdpDMSPiloto"/>
+    <File Path="..\..\Dll_Inc"/>
+    <File Path="..\..\Dll_Inc\FaultLocation.h"/>
+    <File Path="..\..\Fontes"/>
+    <File Path="..\..\Fontes\SinapToolKit"/>
+    <File Path="..\..\Fontes\SinapToolKit\MaeFilha"/>
+    <File Path="..\..\Fontes\SinapToolKit\MaeFilha\TConectaMaeFilha.cpp"/>
+    <File Path="..\..\Fontes\SinapToolKit\MaeFilha\TConectaMaeFilha.cpp"/>
+    <File Path="..\..\Fontes\SinapToolKit\MaeFilha\TConectaMaeFilha.h"/>
+    <File Path="..\..\Fontes\SinapToolKit\Socorro"/>
+    <File Path="..\..\Fontes\SinapToolKit\Socorro\TConecta.cpp"/>
+    <File Path="..\..\Fontes\SinapToolKit\Socorro\TConecta.cpp"/>
+    <File Path="..\..\Fontes\SinapToolKit\Socorro\TConecta.h"/>
+    <File Path="..\..\Fontes\SinapToolKit\TFormStkChild.cpp"/>
+    <File Path="..\..\Fontes\SinapToolKit\TFormStkChild.cpp"/>
+    <File Path="..\..\Fontes\SinapToolKit\TFormStkChild.dfm"/>
+    <File Path="..\..\Fontes\SinapToolKit\TFormStkChild.h"/>
+    <File Path="..\..\Fontes\SinapToolKit\TFormStkMdi.cpp"/>
+    <File Path="..\..\Fontes\SinapToolKit\TFormStkMdi.cpp"/>
+    <File Path="..\..\Fontes\SinapToolKit\TFormStkMdi.dfm"/>
+    <File Path="..\..\Fontes\SinapToolKit\TFormStkMdi.h"/>
+    <File Path="..\..\Fontes\SinapToolKit\TFrameEdpUspDMSPiloto.cpp"/>
+    <File Path="..\..\Fontes\SinapToolKit\TFrameEdpUspDMSPiloto.cpp"/>
+    <File Path="..\..\Fontes\SinapToolKit\TFrameEdpUspDMSPiloto.dfm"/>
+    <File Path="..\..\Fontes\SinapToolKit\TFrameEdpUspDMSPiloto.h"/>
+    <File Path="..\..\DLL_Lib\Win32\Release\ModuloTestes.lib"/>
+    <File Path="..\..\DLL_Lib\Win32\Release\FaultLocationDMSPiloto.lib"/>
+    <File Path="..\..\..\PlataformaSinap\DLL_Lib\Win32\Release\ImportaRedeGIS.lib"/>
+    <File Path="..\..\..\PlataformaSinap\DLL_Lib\Win32\Release\Funcao.lib"/>
+    <File Path="..\..\..\ModulosOpcionais\DLL_Lib\Win32\Release\ImportaRedeAccess.lib"/>
+    <File Path="SinapToolKitPCH1.h"/>
+    <File Path="SinapToolKit.cpp"/>
+  </ProjectSortOrder>
+	<Transactions>
+    <Transaction>2019/10/30 13:21:28.000.859,Z:\SINAPgrid\ProjetoEdpDMSPiloto\Fontes\SinapToolKit\TFrameNeoenergiaUspAda.cpp=Z:\SINAPgrid\ProjetoEdpDMSPiloto\Fontes\SinapToolKit\TFrameEdpUspDMSPiloto.cpp</Transaction>
+    <Transaction>2019/10/30 13:21:28.000.859,Z:\SINAPgrid\ProjetoEdpDMSPiloto\Fontes\SinapToolKit\TFrameNeoenergiaUspAda.h=Z:\SINAPgrid\ProjetoEdpDMSPiloto\Fontes\SinapToolKit\TFrameEdpUspDMSPiloto.h</Transaction>
+    <Transaction>2019/10/30 13:21:28.000.859,Z:\SINAPgrid\ProjetoEdpDMSPiloto\Fontes\SinapToolKit\TFrameNeoenergiaUspAda.dfm=Z:\SINAPgrid\ProjetoEdpDMSPiloto\Fontes\SinapToolKit\TFrameEdpUspDMSPiloto.dfm</Transaction>
+    <Transaction>2019/10/30 13:36:42.000.146,Z:\SINAPgrid\ModulosOpcionais\DLL_Lib\Win32\Release\PerdaSensor.lib=</Transaction>
+    <Transaction>2019/10/30 14:06:57.000.981,Z:\SINAPgrid\ProjetoEdpDMSPiloto\Fontes\SinapToolKit\TFrameNeoenergia.cpp=</Transaction>
+    <Transaction>2019/10/30 14:06:59.000.018,Z:\SINAPgrid\ProjetoEdpDMSPiloto\Fontes\SinapToolKit\TFrameNeoenergiaUspAnalytics.cpp=</Transaction>
+    <Transaction>2019/10/30 14:34:08.000.973,=Z:\SINAPgrid\ProjetoEdpDMSPiloto\DLL_Lib\Win32\Release\FaultLocationDMSPiloto.lib</Transaction>
+    <Transaction>2019/11/18 14:33:04.000.385,=Z:\SINAPgrid\ProjetoEdpDMSPiloto\DLL_Lib\Win32\Release\ModuloTestes.lib</Transaction>
+  </Transactions>
+</BorlandProject>

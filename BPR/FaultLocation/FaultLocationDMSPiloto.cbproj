@@ -1,0 +1,859 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{092723D5-8357-457D-A405-09DDC727D9B8}</ProjectGuid>
+        <ProjectVersion>18.4</ProjectVersion>
+        <FrameworkType>VCL</FrameworkType>
+        <Base>True</Base>
+        <Config Condition="'$(Config)'==''">Debug</Config>
+        <Platform Condition="'$(Platform)'==''">Win32</Platform>
+        <TargetedPlatforms>1</TargetedPlatforms>
+        <AppType>Library</AppType>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Base)'=='true') or '$(Base_Win32)'!=''">
+        <Base_Win32>true</Base_Win32>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win64' and '$(Base)'=='true') or '$(Base_Win64)'!=''">
+        <Base_Win64>true</Base_Win64>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_1)'!=''">
+        <Cfg_1>true</Cfg_1>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_1)'=='true') or '$(Cfg_1_Win32)'!=''">
+        <Cfg_1_Win32>true</Cfg_1_Win32>
+        <CfgParent>Cfg_1</CfgParent>
+        <Cfg_1>true</Cfg_1>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_2)'!=''">
+        <Cfg_2>true</Cfg_2>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_2)'=='true') or '$(Cfg_2_Win32)'!=''">
+        <Cfg_2_Win32>true</Cfg_2_Win32>
+        <CfgParent>Cfg_2</CfgParent>
+        <Cfg_2>true</Cfg_2>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base)'!=''">
+        <AllPackageLibs>rtl.lib;vcl.lib;xmlrtl.lib</AllPackageLibs>
+        <SanitizedProjectName>FaultLocationDMSPiloto</SanitizedProjectName>
+        <_TCHARMapping>wchar_t</_TCHARMapping>
+        <ProjectType>VCppStyleDll</ProjectType>
+        <ILINK_LibraryPath>..\..\Fontes\FaultLocation\AlgoritmoDMS3\;..\..\Fontes\FaultLocation\EstrategiaEvolutiva\;..\..\Fontes\FaultLocation\AlgoRompCabo\;..\..\Fontes\FaultLocation\GeraDefeito\;..\..\Fontes\FaultLocation\EstrategiaEvolutiva\Forms\;..\..\Fontes\FaultLocation\Lote\;..\..\Fontes\FaultLocation\ConfiguracoesRede\;..\..\Fontes\FaultLocation\;..\..\Fontes\FaultLocation\AlgoFasorial\;..\..\Fontes\FaultLocation\Equipamentos\;..\..\Fontes\FaultLocation\DSS\;..\..\Fontes\FaultLocation\ComunicacaoXML\;..\..\Fontes\FaultLocation\Auxiliares\;$(SINAP_LIB);$(PROJETOS)\ProjetoNeoEnergia\DLL_Lib\$(Platform)\$(Config);$(ILINK_LibraryPath)</ILINK_LibraryPath>
+        <Multithreaded>true</Multithreaded>
+        <ILINK_GenerateImportLibrary>true</ILINK_GenerateImportLibrary>
+        <DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;$(DCC_Namespace)</DCC_Namespace>
+        <IncludePath>..\..\Fontes\FaultLocation\AlgoritmoDMS3\;..\..\Fontes\FaultLocation\EstrategiaEvolutiva\;..\..\Fontes\FaultLocation\AlgoRompCabo\;..\..\Fontes\FaultLocation\GeraDefeito\;..\..\Fontes\FaultLocation\EstrategiaEvolutiva\Forms\;..\..\Fontes\FaultLocation\Lote\;..\..\Fontes\FaultLocation\ConfiguracoesRede\;..\..\Fontes\FaultLocation\;..\..\Fontes\FaultLocation\AlgoFasorial\;..\..\Fontes\FaultLocation\Equipamentos\;..\..\Fontes\FaultLocation\DSS\;..\..\Fontes\FaultLocation\ComunicacaoXML\;..\..\Fontes\FaultLocation\Auxiliares\;$(PROJETOS);$(IncludePath)</IncludePath>
+        <DCC_CBuilderOutput>JPHNE</DCC_CBuilderOutput>
+        <DynamicRTL>true</DynamicRTL>
+        <UsePackages>true</UsePackages>
+        <IntermediateOutputDir>$(PROJETOS)\ProjetoNeoEnergia\Tmp\BPR\FaultLocation\$(Platform)\$(Config)</IntermediateOutputDir>
+        <FinalOutputDir>$(SINAP_BIN)\$(Platform)\$(Config)</FinalOutputDir>
+        <BCC_wpar>false</BCC_wpar>
+        <BCC_OptimizeForSpeed>true</BCC_OptimizeForSpeed>
+        <BCC_ExtendedErrorInfo>true</BCC_ExtendedErrorInfo>
+        <ILINK_TranslatedLibraryPath>$(BDSLIB)\$(PLATFORM)\release\$(LANGDIR);$(ILINK_TranslatedLibraryPath)</ILINK_TranslatedLibraryPath>
+        <BPILibOutputDir>$(PROJETOS)\ProjetoNeoEnergia\DLL_Lib\$(Platform)\$(Config)</BPILibOutputDir>
+        <VerInfo_Locale>1046</VerInfo_Locale>
+        <VerInfo_Keys>CompanyName=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductVersion=1.0.0.0;Comments=;ProgramID=com.embarcadero.$(MSBuildProjectName);FileDescription=$(MSBuildProjectName);ProductName=$(MSBuildProjectName)</VerInfo_Keys>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_Win32)'!=''">
+        <PackageImports>adortl;bcbie;bcbsmp;bindcomp;bindcompdbx;bindcompfmx;bindcompvcl;bindengine;CloudService;CodeSiteExpressPkg;CustomIPTransport;DataSnapClient;DataSnapCommon;DataSnapConnectors;DatasnapConnectorsFreePascal;DataSnapFireDAC;DataSnapIndy10ServerTransport;DataSnapNativeClient;DataSnapProviderClient;DataSnapServer;DataSnapServerMidas;dbexpress;dbrtl;dbxcds;DbxClientDriver;DbxCommonDriver;DBXDb2Driver;DBXFirebirdDriver;DBXInformixDriver;DBXInterBaseDriver;DBXMSSQLDriver;DBXMySQLDriver;DBXOdbcDriver;DBXOracleDriver;DBXSqliteDriver;DBXSybaseASADriver;DBXSybaseASEDriver;dsnap;dsnapcon;dsnapxml;emsclient;emsclientfiredac;FireDAC;FireDACADSDriver;FireDACASADriver;FireDACCommon;FireDACCommonDriver;FireDACDb2Driver;FireDACDBXDriver;FireDACDSDriver;FireDACIBDriver;FireDACInfxDriver;FireDACMSAccDriver;FireDACMSSQLDriver;FireDACMySQLDriver;FireDACODBCDriver;FireDACOracleDriver;FireDACPgDriver;FireDACSqliteDriver;fmx;fmxase;fmxdae;fmxFireDAC;fmxobj;FMXTee;FmxTeeUI;frx21;frxDB21;frxe21;frxTee21;ibxpress;IndyCore;IndyIPClient;IndyIPCommon;IndyIPServer;IndyProtocols;IndySystem;inet;inetdb;inetdbxpress;Intraweb;MetropolisUILiveTile;RESTBackendComponents;RESTComponents;rtl;soapmidas;soaprtl;soapserver;svn;Tee;TeeDB;TeeUI;tethering;vcl;vclactnband;vcldb;vcldsnap;vclFireDAC;vclib;vclie;vclimg;VCLRESTComponents;vclribbon;VclSmp;vcltouch;vclx;xmlrtl;$(PackageImports)</PackageImports>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <Manifest_File>(None)</Manifest_File>
+        <DCC_Namespace>Winapi;System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;Bde;$(DCC_Namespace)</DCC_Namespace>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <ILINK_LibraryPath>Z:\SINAPgrid\PlataformaSinap\DLL_Lib\Win32\Release\;$(ILINK_LibraryPath)</ILINK_LibraryPath>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_Win64)'!=''">
+        <PackageImports>adortl;bindcomp;bindcompdbx;bindcompfmx;bindcompvcl;bindengine;CloudService;CustomIPTransport;DataSnapClient;DataSnapCommon;DataSnapConnectors;DatasnapConnectorsFreePascal;DataSnapFireDAC;DataSnapIndy10ServerTransport;DataSnapNativeClient;DataSnapProviderClient;DataSnapServer;DataSnapServerMidas;dbexpress;dbrtl;dbxcds;DbxClientDriver;DbxCommonDriver;DBXDb2Driver;DBXFirebirdDriver;DBXInformixDriver;DBXInterBaseDriver;DBXMSSQLDriver;DBXMySQLDriver;DBXOdbcDriver;DBXOracleDriver;DBXSqliteDriver;DBXSybaseASADriver;DBXSybaseASEDriver;dsnap;dsnapcon;dsnapxml;emsclient;emsclientfiredac;FireDAC;FireDACADSDriver;FireDACASADriver;FireDACCommon;FireDACCommonDriver;FireDACDb2Driver;FireDACDBXDriver;FireDACDSDriver;FireDACIBDriver;FireDACInfxDriver;FireDACMSAccDriver;FireDACMSSQLDriver;FireDACMySQLDriver;FireDACODBCDriver;FireDACOracleDriver;FireDACPgDriver;FireDACSqliteDriver;fmx;fmxase;fmxdae;fmxFireDAC;fmxobj;FMXTee;FmxTeeUI;ibxpress;IndyCore;IndyIPClient;IndyIPCommon;IndyIPServer;IndyProtocols;IndySystem;inet;inetdb;inetdbxpress;Intraweb;MetropolisUILiveTile;RESTBackendComponents;RESTComponents;rtl;soapmidas;soaprtl;soapserver;Tee;TeeDB;TeeUI;tethering;vcl;vclactnband;vcldb;vcldsnap;vclFireDAC;vclib;vclie;vclimg;VCLRESTComponents;vclribbon;VclSmp;vcltouch;vclx;xmlrtl;$(PackageImports)</PackageImports>
+        <IncludePath>$(BDSINCLUDE)\windows\vcl;$(IncludePath)</IncludePath>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1)'!=''">
+        <BCC_OptimizeForSpeed>false</BCC_OptimizeForSpeed>
+        <BCC_DisableOptimizations>true</BCC_DisableOptimizations>
+        <DCC_Optimize>false</DCC_Optimize>
+        <DCC_DebugInfoInExe>true</DCC_DebugInfoInExe>
+        <Defines>_DEBUG;$(Defines)</Defines>
+        <BCC_InlineFunctionExpansion>false</BCC_InlineFunctionExpansion>
+        <BCC_UseRegisterVariables>None</BCC_UseRegisterVariables>
+        <DCC_Define>DEBUG</DCC_Define>
+        <BCC_DebugLineNumbers>true</BCC_DebugLineNumbers>
+        <TASM_DisplaySourceLines>true</TASM_DisplaySourceLines>
+        <BCC_StackFrames>true</BCC_StackFrames>
+        <ILINK_FullDebugInfo>true</ILINK_FullDebugInfo>
+        <TASM_Debugging>Full</TASM_Debugging>
+        <BCC_SourceDebuggingOn>true</BCC_SourceDebuggingOn>
+        <BCC_EnableCPPExceptions>true</BCC_EnableCPPExceptions>
+        <BCC_DisableFramePtrElimOpt>true</BCC_DisableFramePtrElimOpt>
+        <BCC_DisableSpellChecking>true</BCC_DisableSpellChecking>
+        <CLANG_UnwindTables>true</CLANG_UnwindTables>
+        <ILINK_TranslatedLibraryPath>$(BDSLIB)\$(PLATFORM)\debug\$(LANGDIR);$(ILINK_TranslatedLibraryPath)</ILINK_TranslatedLibraryPath>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
+        <Debugger_HostApplication>$(SINAP_BIN)\Win32\Debug\SINAPgrid.exe</Debugger_HostApplication>
+        <BCC_IncludePath>E:\Desenvolvimentos\SINAPSIS-DEV\Sinap\Rev4.0_XE;$(BCC_IncludePath)</BCC_IncludePath>
+        <FinalOutputDir>$(SINAP_BIN)\$(Platform)\$(Config)</FinalOutputDir>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <Manifest_File>None</Manifest_File>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <LinkPackageImports>rtl.bpi;vcl.bpi;xmlrtl.bpi</LinkPackageImports>
+        <BPILibOutputDir>$(PROJETOS)\ProjetoEdpDMSPiloto\DLL_Lib\$(Platform)\$(Config)</BPILibOutputDir>
+        <IntermediateOutputDir>$(PROJETOS)\ProjetoEdpDMSPiloto\Tmp\BPR\FaultLocation\$(Platform)\$(Config)</IntermediateOutputDir>
+        <ILINK_LibraryPath>Z:\SINAPgrid\PlataformaSinap\DLL_Lib\Win32\Release\;$(PROJETOS)\ProjetoEdpDMSPiloto\Fontes\FaultLocation;$(PROJETOS)\ProjetoEdpDMSPiloto\Fontes\FaultLocation\Auxiliares;$(PROJETOS)\ProjetoEdpDMSPiloto\Fontes\FaultLocation\ComunicacaoXML</ILINK_LibraryPath>
+        <IncludePath>$(PROJETOS)\;$(PROJETOS)\..\;$(PROJETOS)\ProjetoEdpDMSPiloto\Fontes;$(PROJETOS)\ProjetoEdpDMSPiloto\Fontes\FaultLocation;$(PROJETOS)\ProjetoEdpDMSPiloto\Fontes\FaultLocation\Auxiliares;$(IncludePath)</IncludePath>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2)'!=''">
+        <Defines>NDEBUG;$(Defines)</Defines>
+        <TASM_Debugging>None</TASM_Debugging>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
+        <FinalOutputDir>$(SINAP_BIN)\$(Platform)\$(Config)</FinalOutputDir>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <LinkPackageImports>rtl.bpi;vcl.bpi;xmlrtl.bpi</LinkPackageImports>
+        <Manifest_File>None</Manifest_File>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <BPILibOutputDir>$(PROJETOS)\ProjetoEdpDMSPiloto\DLL_Lib\$(Platform)\$(Config)</BPILibOutputDir>
+        <IntermediateOutputDir>$(PROJETOS)\ProjetoEdpDMSPiloto\Tmp\BPR\FaultLocation\$(Platform)\$(Config)</IntermediateOutputDir>
+        <ILINK_LibraryPath>Z:\SINAPgrid\PlataformaSinap\DLL_Lib\Win32\Release\;$(PROJETOS)\ProjetoEdpDMSPiloto\Fontes\FaultLocation;$(PROJETOS)\ProjetoEdpDMSPiloto\Fontes\FaultLocation\Auxiliares</ILINK_LibraryPath>
+        <Debugger_HostApplication>$(SINAP_BIN)\Win32\Debug\SINAPgrid.exe</Debugger_HostApplication>
+        <IncludePath>$(PROJETOS)\;$(PROJETOS)\..\;$(PROJETOS)\ProjetoEdpDMSPiloto\Fontes;$(PROJETOS)\ProjetoEdpDMSPiloto\Fontes\FaultLocation;$(PROJETOS)\ProjetoEdpDMSPiloto\Fontes\FaultLocation\Auxiliares</IncludePath>
+    </PropertyGroup>
+    <ItemGroup>
+        <LibFiles Include="..\..\..\PlataformaSinap\DLL_Lib\Win32\Release\Arranjo.lib" Condition="'$(Platform)'=='Win32'">
+            <BuildOrder>36</BuildOrder>
+            <IgnorePath>true</IgnorePath>
+        </LibFiles>
+        <LibFiles Include="..\..\..\PlataformaSinap\DLL_Lib\Win32\Release\Bloco.lib" Condition="'$(Platform)'=='Win32'">
+            <BuildOrder>25</BuildOrder>
+            <IgnorePath>true</IgnorePath>
+        </LibFiles>
+        <LibFiles Include="..\..\..\PlataformaSinap\DLL_Lib\Win32\Release\CalcIndCont.lib" Condition="'$(Platform)'=='Win32'">
+            <BuildOrder>58</BuildOrder>
+            <IgnorePath>true</IgnorePath>
+        </LibFiles>
+        <LibFiles Include="..\..\..\PlataformaSinap\DLL_Lib\Win32\Release\Funcao.lib" Condition="'$(Platform)'=='Win32'">
+            <BuildOrder>27</BuildOrder>
+            <IgnorePath>true</IgnorePath>
+        </LibFiles>
+        <LibFiles Include="..\..\..\PlataformaSinap\DLL_Lib\Win32\Release\Ordena.lib" Condition="'$(Platform)'=='Win32'">
+            <BuildOrder>26</BuildOrder>
+            <IgnorePath>true</IgnorePath>
+        </LibFiles>
+        <LibFiles Include="..\..\..\PlataformaSinap\DLL_Lib\Win32\Release\Radial.lib" Condition="'$(Platform)'=='Win32'">
+            <BuildOrder>31</BuildOrder>
+            <IgnorePath>true</IgnorePath>
+        </LibFiles>
+        <CppCompile Include="FaultLocationDMSPiloto.cpp">
+            <BuildOrder>19</BuildOrder>
+        </CppCompile>
+        <PCHCompile Include="FaultLocationDMSPilotoPCH1.h">
+            <BuildOrder>0</BuildOrder>
+            <PCH>true</PCH>
+        </PCHCompile>
+        <CppCompile Include="..\..\Fontes\FaultLocation\AlgoFasorial\TAlgoFasorial.cpp">
+            <DependentOn>..\..\Fontes\FaultLocation\AlgoFasorial\TAlgoFasorial.h</DependentOn>
+            <BuildOrder>55</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\FaultLocation\AlgoritmoDMS3\TAlgoritmoDMS3.cpp">
+            <DependentOn>..\..\Fontes\FaultLocation\AlgoritmoDMS3\TAlgoritmoDMS3.h</DependentOn>
+            <BuildOrder>60</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\FaultLocation\AlgoRompCabo\TAlgoRompCabo.cpp">
+            <DependentOn>..\..\Fontes\FaultLocation\AlgoRompCabo\TAlgoRompCabo.h</DependentOn>
+            <BuildOrder>57</BuildOrder>
+        </CppCompile>
+        <None Include="..\..\Fontes\FaultLocation\Auxiliares\Enums.h">
+            <BuildOrder>33</BuildOrder>
+        </None>
+        <None Include="..\..\Fontes\FaultLocation\Auxiliares\Estruturas.h">
+            <BuildOrder>42</BuildOrder>
+        </None>
+        <CppCompile Include="..\..\Fontes\FaultLocation\Auxiliares\FuncoesFL.cpp">
+            <DependentOn>..\..\Fontes\FaultLocation\Auxiliares\FuncoesFL.h</DependentOn>
+            <BuildOrder>44</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\FaultLocation\Auxiliares\TConfiguracoes.cpp">
+            <DependentOn>..\..\Fontes\FaultLocation\Auxiliares\TConfiguracoes.h</DependentOn>
+            <BuildOrder>5</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\FaultLocation\Auxiliares\TCronos.cpp">
+            <DependentOn>..\..\Fontes\FaultLocation\Auxiliares\TCronos.h</DependentOn>
+            <BuildOrder>21</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\FaultLocation\Auxiliares\TDados.cpp">
+            <DependentOn>..\..\Fontes\FaultLocation\Auxiliares\TDados.h</DependentOn>
+            <BuildOrder>17</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\FaultLocation\Auxiliares\TFormExportaBlocos.cpp">
+            <Form>FormExportaBlocos</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\FaultLocation\Auxiliares\TFormExportaBlocos.h</DependentOn>
+            <BuildOrder>55</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\FaultLocation\Auxiliares\TFormExportaLigacoes.cpp">
+            <Form>FormExportaLigacoes</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\FaultLocation\Auxiliares\TFormExportaLigacoes.h</DependentOn>
+            <BuildOrder>56</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\FaultLocation\Auxiliares\TFormPtosEquidistantes.cpp">
+            <Form>FormPtosEquidistantes</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\FaultLocation\Auxiliares\TFormPtosEquidistantes.h</DependentOn>
+            <BuildOrder>57</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\FaultLocation\Auxiliares\TFuncoesDeRede.cpp">
+            <DependentOn>..\..\Fontes\FaultLocation\Auxiliares\TFuncoesDeRede.h</DependentOn>
+            <BuildOrder>6</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\FaultLocation\Auxiliares\TImportaXMLs.cpp">
+            <DependentOn>..\..\Fontes\FaultLocation\Auxiliares\TImportaXMLs.h</DependentOn>
+            <BuildOrder>29</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\FaultLocation\Auxiliares\TLog.cpp">
+            <DependentOn>..\..\Fontes\FaultLocation\Auxiliares\TLog.h</DependentOn>
+            <BuildOrder>20</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\FaultLocation\Auxiliares\TOpcoesGraficas.cpp">
+            <DependentOn>..\..\Fontes\FaultLocation\Auxiliares\TOpcoesGraficas.h</DependentOn>
+            <BuildOrder>44</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\FaultLocation\Auxiliares\TXMLEqpto.cpp">
+            <DependentOn>..\..\Fontes\FaultLocation\Auxiliares\TXMLEqpto.h</DependentOn>
+            <BuildOrder>32</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\FaultLocation\ComunicacaoXML\TAlarme.cpp">
+            <DependentOn>..\..\Fontes\FaultLocation\ComunicacaoXML\TAlarme.h</DependentOn>
+            <BuildOrder>50</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\FaultLocation\ComunicacaoXML\TXMLComunicacao.cpp">
+            <DependentOn>..\..\Fontes\FaultLocation\ComunicacaoXML\TXMLComunicacao.h</DependentOn>
+            <BuildOrder>52</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\FaultLocation\ComunicacaoXML\TXMLParser.cpp">
+            <DependentOn>..\..\Fontes\FaultLocation\ComunicacaoXML\TXMLParser.h</DependentOn>
+            <BuildOrder>52</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\FaultLocation\ConfiguracoesRede\TConfigRede.cpp">
+            <DependentOn>..\..\Fontes\FaultLocation\ConfiguracoesRede\TConfigRede.h</DependentOn>
+            <BuildOrder>56</BuildOrder>
+        </CppCompile>
+        <None Include="..\..\Fontes\FaultLocation\DSS\DSSEnums.h">
+            <BuildOrder>39</BuildOrder>
+        </None>
+        <CppCompile Include="..\..\Fontes\FaultLocation\DSS\TConversorSinapDSS.cpp">
+            <DependentOn>..\..\Fontes\FaultLocation\DSS\TConversorSinapDSS.h</DependentOn>
+            <BuildOrder>35</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\FaultLocation\DSS\TDSS.cpp">
+            <DependentOn>..\..\Fontes\FaultLocation\DSS\TDSS.h</DependentOn>
+            <BuildOrder>34</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\FaultLocation\DSS\TDSSBarra.cpp">
+            <DependentOn>..\..\Fontes\FaultLocation\DSS\TDSSBarra.h</DependentOn>
+            <BuildOrder>38</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\FaultLocation\DSS\TDSSLigacao.cpp">
+            <DependentOn>..\..\Fontes\FaultLocation\DSS\TDSSLigacao.h</DependentOn>
+            <BuildOrder>40</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\FaultLocation\DSS\TFaultStudyFL.cpp">
+            <DependentOn>..\..\Fontes\FaultLocation\DSS\TFaultStudyFL.h</DependentOn>
+            <BuildOrder>41</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\FaultLocation\DSS\TTryFault.cpp">
+            <DependentOn>..\..\Fontes\FaultLocation\DSS\TTryFault.h</DependentOn>
+            <BuildOrder>37</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\FaultLocation\DSS\TTryRompCabo.cpp">
+            <DependentOn>..\..\Fontes\FaultLocation\DSS\TTryRompCabo.h</DependentOn>
+            <BuildOrder>58</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\FaultLocation\Equipamentos\TBarraSemTensao.cpp">
+            <DependentOn>..\..\Fontes\FaultLocation\Equipamentos\TBarraSemTensao.h</DependentOn>
+            <BuildOrder>22</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\FaultLocation\Equipamentos\TChaveMonitorada.cpp">
+            <DependentOn>..\..\Fontes\FaultLocation\Equipamentos\TChaveMonitorada.h</DependentOn>
+            <BuildOrder>15</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\FaultLocation\Equipamentos\TEqptoCampo.cpp">
+            <DependentOn>..\..\Fontes\FaultLocation\Equipamentos\TEqptoCampo.h</DependentOn>
+            <BuildOrder>14</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\FaultLocation\Equipamentos\TFusivel.cpp">
+            <DependentOn>..\..\Fontes\FaultLocation\Equipamentos\TFusivel.h</DependentOn>
+            <BuildOrder>16</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\FaultLocation\Equipamentos\TITrafo.cpp">
+            <DependentOn>..\..\Fontes\FaultLocation\Equipamentos\TITrafo.h</DependentOn>
+            <BuildOrder>11</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\FaultLocation\Equipamentos\TMedidorInteligente.cpp">
+            <DependentOn>..\..\Fontes\FaultLocation\Equipamentos\TMedidorInteligente.h</DependentOn>
+            <BuildOrder>58</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\FaultLocation\Equipamentos\TMedidorInteligenteBalanco.cpp">
+            <DependentOn>..\..\Fontes\FaultLocation\Equipamentos\TMedidorInteligenteBalanco.h</DependentOn>
+            <BuildOrder>59</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\FaultLocation\Equipamentos\TQualimetro.cpp">
+            <DependentOn>..\..\Fontes\FaultLocation\Equipamentos\TQualimetro.h</DependentOn>
+            <BuildOrder>12</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\FaultLocation\Equipamentos\TSensor.cpp">
+            <DependentOn>..\..\Fontes\FaultLocation\Equipamentos\TSensor.h</DependentOn>
+            <BuildOrder>13</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\FaultLocation\EstrategiaEvolutiva\TEstrategiaEvolutiva.cpp">
+            <DependentOn>..\..\Fontes\FaultLocation\EstrategiaEvolutiva\TEstrategiaEvolutiva.h</DependentOn>
+            <BuildOrder>16</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\FaultLocation\EstrategiaEvolutiva\TIndividuoEE.cpp">
+            <DependentOn>..\..\Fontes\FaultLocation\EstrategiaEvolutiva\TIndividuoEE.h</DependentOn>
+            <BuildOrder>7</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\FaultLocation\EstrategiaEvolutiva\TSorteio.cpp">
+            <DependentOn>..\..\Fontes\FaultLocation\EstrategiaEvolutiva\TSorteio.h</DependentOn>
+            <BuildOrder>8</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\FaultLocation\GeraDefeito\TGeraDefeito.cpp">
+            <DependentOn>..\..\Fontes\FaultLocation\GeraDefeito\TGeraDefeito.h</DependentOn>
+            <BuildOrder>56</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\FaultLocation\Lote\TEvento.cpp">
+            <DependentOn>..\..\Fontes\FaultLocation\Lote\TEvento.h</DependentOn>
+            <BuildOrder>45</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\FaultLocation\Lote\TEventoCGP.cpp">
+            <DependentOn>..\..\Fontes\FaultLocation\Lote\TEventoCGP.h</DependentOn>
+            <BuildOrder>47</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\FaultLocation\Lote\TEventoOMS.cpp">
+            <DependentOn>..\..\Fontes\FaultLocation\Lote\TEventoOMS.h</DependentOn>
+            <BuildOrder>48</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\FaultLocation\Lote\TFaultLocationLote.cpp">
+            <DependentOn>..\..\Fontes\FaultLocation\Lote\TFaultLocationLote.h</DependentOn>
+            <BuildOrder>47</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\FaultLocation\TAreaBusca.cpp">
+            <DependentOn>..\..\Fontes\FaultLocation\TAreaBusca.h</DependentOn>
+            <BuildOrder>19</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\FaultLocation\TBlocosRedeRadial.cpp">
+            <DependentOn>..\..\Fontes\FaultLocation\TBlocosRedeRadial.h</DependentOn>
+            <BuildOrder>56</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\FaultLocation\TClassificacao.cpp">
+            <DependentOn>..\..\Fontes\FaultLocation\TClassificacao.h</DependentOn>
+            <BuildOrder>18</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\FaultLocation\TCluster.cpp">
+            <DependentOn>..\..\Fontes\FaultLocation\TCluster.h</DependentOn>
+            <BuildOrder>51</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\FaultLocation\TFormFaultLocation.cpp">
+            <Form>FormFaultLocation</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\..\Fontes\FaultLocation\TFormFaultLocation.h</DependentOn>
+            <BuildOrder>54</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\FaultLocation\TGerenciadorEventos.cpp">
+            <DependentOn>..\..\Fontes\FaultLocation\TGerenciadorEventos.h</DependentOn>
+            <BuildOrder>24</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\..\Fontes\FaultLocation\TThreadFaultLocation.cpp">
+            <DependentOn>..\..\Fontes\FaultLocation\TThreadFaultLocation.h</DependentOn>
+            <BuildOrder>28</BuildOrder>
+        </CppCompile>
+        <FormResources Include="..\..\Fontes\FaultLocation\TFormFaultLocation.dfm"/>
+        <FormResources Include="..\..\Fontes\FaultLocation\Auxiliares\TFormExportaBlocos.dfm"/>
+        <FormResources Include="..\..\Fontes\FaultLocation\Auxiliares\TFormExportaLigacoes.dfm"/>
+        <FormResources Include="..\..\Fontes\FaultLocation\Auxiliares\TFormPtosEquidistantes.dfm"/>
+        <BuildConfiguration Include="Release">
+            <Key>Cfg_2</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Base">
+            <Key>Base</Key>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Debug">
+            <Key>Cfg_1</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>CPlusPlusBuilder.Personality.12</Borland.Personality>
+        <Borland.ProjectType>VCppStyleDll</Borland.ProjectType>
+        <BorlandProject>
+            <CPlusPlusBuilder.Personality>
+                <ProjectProperties>
+                    <ProjectProperties Name="AutoShowDeps">False</ProjectProperties>
+                    <ProjectProperties Name="ManagePaths">True</ProjectProperties>
+                    <ProjectProperties Name="VerifyPackages">True</ProjectProperties>
+                    <ProjectProperties Name="IndexFiles">False</ProjectProperties>
+                </ProjectProperties>
+                <Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\bcboffice2k250.bpl">Embarcadero C++Builder Office 2000 Servers Package</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\bcbofficexp250.bpl">Embarcadero C++Builder Office XP Servers Package</Excluded_Packages>
+                </Excluded_Packages>
+            </CPlusPlusBuilder.Personality>
+            <Deployment Version="3">
+                <DeployFile LocalName="..\..\..\PlataformaSinap\Tmp\Bin\Win32\Debug\FaultLocationDMSPiloto.dll" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="Win32">
+                        <RemoteName>FaultLocationDMSPiloto</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\..\..\PlataformaSinap\Tmp\Bin\Win32\Release\FaultLocationDMSPiloto" Configuration="Release" Class="ProjectOutput">
+                    <Platform Name="Win32">
+                        <RemoteName>FaultLocationDMSPiloto</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'!='true'" LocalName="$(BDS)\bin\cc32c250.dll" Class="DependencyModule">
+                    <Platform Name="Win32">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'=='true'" LocalName="$(BDS)\bin\cc32c250mt.dll" Class="DependencyModule">
+                    <Platform Name="Win32">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile Condition="'$(UsingDelphiRTL)'=='true'" LocalName="$(BDS)\bin64\borlndmm.dll" Class="DependencyModule">
+                    <Platform Name="Win64">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile Condition="'$(DynamicRTL)'=='true'" LocalName="$(BDS)\Redist\osx32\libcgcrtl.dylib" Class="DependencyModule">
+                    <Platform Name="OSX32">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile Condition="'$(UsingDelphiRTL)'=='true'" LocalName="$(BDS)\bin\borlndmm.dll" Class="DependencyModule">
+                    <Platform Name="Win32">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'=='true'" LocalName="$(BDS)\bin\cc32160mt.dll" Class="DependencyModule"/>
+                <DeployFile LocalName="..\..\..\Usuarios\SINAPgrid4.3\Bin\FaultLocation.dll" Configuration="Debug" Class="ProjectOutput"/>
+                <DeployFile Condition="'$(DynamicRTL)'=='true'" LocalName="$(BDS)\Redist\osx32\libcgstl.dylib" Class="DependencyModule">
+                    <Platform Name="OSX32">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName=".\Win32\Debug\FaultLocation" Configuration="Debug" Class="ProjectOutput"/>
+                <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'!='true'" LocalName="$(BDS)\bin\cc32160.dll" Class="DependencyModule"/>
+                <DeployFile LocalName="..\..\..\Usuarios\SINAPgrid4.3-FL-ADA-NEOENERGIA\Bin\FaultLocation.dll" Configuration="Debug" Class="ProjectOutput"/>
+                <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'=='true'" LocalName="$(BDS)\bin\cc32250mt.dll" Class="DependencyModule">
+                    <Platform Name="Win32">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'=='true'" LocalName="$(BDS)\bin64\cc64250mt.dll" Class="DependencyModule">
+                    <Platform Name="Win64">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Z:\Sinap\Rev4.0_XE\PlataformaSinap\Tmp\Bin\Win32\Debug\FaultLocation.dll" Configuration="Debug" Class="ProjectOutput"/>
+                <DeployFile LocalName="..\..\..\PlataformaSinap\Tmp\Bin\Win32\Debug\FaultLocationDMSPiloto.tds" Configuration="Debug" Class="DebugSymbols">
+                    <Platform Name="Win32">
+                        <RemoteName>FaultLocationDMSPiloto.tds</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName=".\Win32\Debug\FaultLocation.dll" Configuration="Debug" Class="ProjectOutput"/>
+                <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'!='true'" LocalName="$(BDS)\bin\cc32250.dll" Class="DependencyModule">
+                    <Platform Name="Win32">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'=='true'" LocalName="$(BDS)\bin64\cc64160mt.dll" Class="DependencyModule"/>
+                <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'!='true'" LocalName="$(BDS)\bin64\cc64250.dll" Class="DependencyModule">
+                    <Platform Name="Win64">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'!='true'" LocalName="$(BDS)\bin64\cc64160.dll" Class="DependencyModule"/>
+                <DeployClass Name="AdditionalDebugSymbols">
+                    <Platform Name="OSX32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>0</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidClassesDexFile">
+                    <Platform Name="Android">
+                        <RemoteDir>classes</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidGDBServer">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\armeabi-v7a</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidLibnativeArmeabiFile">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\armeabi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidLibnativeMipsFile">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\mips</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidServiceOutput">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\armeabi-v7a</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidSplashImageDef">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidSplashStyles">
+                    <Platform Name="Android">
+                        <RemoteDir>res\values</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_DefaultAppIcon">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon144">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-xxhdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon36">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-ldpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon48">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-mdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon72">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-hdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon96">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-xhdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_SplashImage426">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-small</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_SplashImage470">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-normal</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_SplashImage640">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-large</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_SplashImage960">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-xlarge</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="DebugSymbols">
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="DependencyFramework">
+                    <Platform Name="OSX32">
+                        <Operation>1</Operation>
+                        <Extensions>.framework</Extensions>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="DependencyModule">
+                    <Platform Name="OSX32">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                        <Extensions>.dll;.bpl</Extensions>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Required="true" Name="DependencyPackage">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                        <Extensions>.bpl</Extensions>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="File">
+                    <Platform Name="Android">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPad_Launch1024">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPad_Launch1536">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPad_Launch2048">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPad_Launch768">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPhone_Launch320">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPhone_Launch640">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPhone_Launch640x1136">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectAndroidManifest">
+                    <Platform Name="Android">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSDeviceDebug">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>..\$(PROJECTNAME).app.dSYM\Contents\Resources\DWARF</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>..\$(PROJECTNAME).app.dSYM\Contents\Resources\DWARF</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSDeviceResourceRules"/>
+                <DeployClass Name="ProjectiOSEntitlements"/>
+                <DeployClass Name="ProjectiOSInfoPList"/>
+                <DeployClass Name="ProjectiOSResource">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectOSXEntitlements"/>
+                <DeployClass Name="ProjectOSXInfoPList"/>
+                <DeployClass Name="ProjectOSXResource">
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\Resources</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Required="true" Name="ProjectOutput">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\armeabi-v7a</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Linux64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectUWPManifest">
+                    <Platform Name="Win32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Win64">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="UWP_CppLogo150">
+                    <Platform Name="Win32">
+                        <RemoteDir>Assets</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Win64">
+                        <RemoteDir>Assets</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="UWP_CppLogo44">
+                    <Platform Name="Win32">
+                        <RemoteDir>Assets</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Win64">
+                        <RemoteDir>Assets</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <ProjectRoot Platform="Win64" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="iOSDevice64" Name="$(PROJECTNAME).app"/>
+                <ProjectRoot Platform="iOSDevice32" Name="$(PROJECTNAME).app"/>
+                <ProjectRoot Platform="Win32" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="Linux64" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="OSX32" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="Android" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="iOSSimulator" Name="$(PROJECTNAME).app"/>
+            </Deployment>
+            <Platforms>
+                <Platform value="Win32">True</Platform>
+                <Platform value="Win64">False</Platform>
+            </Platforms>
+        </BorlandProject>
+        <ProjectFileVersion>12</ProjectFileVersion>
+    </ProjectExtensions>
+    <Import Project="$(BDS)\Bin\CodeGear.Cpp.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Cpp.Targets')"/>
+    <Import Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj" Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')"/>
+    <Import Project="$(MSBuildProjectName).deployproj" Condition="Exists('$(MSBuildProjectName).deployproj')"/>
+</Project>
