@@ -35,9 +35,9 @@
     <File Path="SinapToolKit.cpp"/>
   </ProjectSortOrder>
 	<Transactions>
-    <Transaction>2019/10/30 13:21:28.000.859,Z:\SINAPgrid\ProjetoEdpDMSPiloto\Fontes\SinapToolKit\TFrameNeoenergiaUspAda.cpp=Z:\SINAPgrid\ProjetoEdpDMSPiloto\Fontes\SinapToolKit\TFrameEdpUspDMSPiloto.cpp</Transaction>
-    <Transaction>2019/10/30 13:21:28.000.859,Z:\SINAPgrid\ProjetoEdpDMSPiloto\Fontes\SinapToolKit\TFrameNeoenergiaUspAda.h=Z:\SINAPgrid\ProjetoEdpDMSPiloto\Fontes\SinapToolKit\TFrameEdpUspDMSPiloto.h</Transaction>
-    <Transaction>2019/10/30 13:21:28.000.859,Z:\SINAPgrid\ProjetoEdpDMSPiloto\Fontes\SinapToolKit\TFrameNeoenergiaUspAda.dfm=Z:\SINAPgrid\ProjetoEdpDMSPiloto\Fontes\SinapToolKit\TFrameEdpUspDMSPiloto.dfm</Transaction>
+    <Transaction>2019/10/30 13:21:28.000.859,Z:\SINAPgrid\ProjetoEdpDMSPiloto\Fontes\SinapToolKit\TFrameEdpUspDMSPiloto.dfm=Z:\SINAPgrid\ProjetoEdpDMSPiloto\Fontes\SinapToolKit\TFrameNeoenergiaUspAda.dfm</Transaction>
+    <Transaction>2019/10/30 13:21:28.000.859,Z:\SINAPgrid\ProjetoEdpDMSPiloto\Fontes\SinapToolKit\TFrameEdpUspDMSPiloto.cpp=Z:\SINAPgrid\ProjetoEdpDMSPiloto\Fontes\SinapToolKit\TFrameNeoenergiaUspAda.cpp</Transaction>
+    <Transaction>2019/10/30 13:21:28.000.859,Z:\SINAPgrid\ProjetoEdpDMSPiloto\Fontes\SinapToolKit\TFrameEdpUspDMSPiloto.h=Z:\SINAPgrid\ProjetoEdpDMSPiloto\Fontes\SinapToolKit\TFrameNeoenergiaUspAda.h</Transaction>
     <Transaction>2019/10/30 13:36:42.000.146,Z:\SINAPgrid\ModulosOpcionais\DLL_Lib\Win32\Release\PerdaSensor.lib=</Transaction>
     <Transaction>2019/10/30 14:06:57.000.981,Z:\SINAPgrid\ProjetoEdpDMSPiloto\Fontes\SinapToolKit\TFrameNeoenergia.cpp=</Transaction>
     <Transaction>2019/10/30 14:06:59.000.018,Z:\SINAPgrid\ProjetoEdpDMSPiloto\Fontes\SinapToolKit\TFrameNeoenergiaUspAnalytics.cpp=</Transaction>

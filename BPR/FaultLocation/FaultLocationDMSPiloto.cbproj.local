@@ -182,10 +182,10 @@
     <File Path="..\..\..\PlataformaSinap\DLL_Lib\Win32\Release\Ordena.lib"/>
   </ProjectSortOrder>
 	<Transactions>
-    <Transaction>2019/10/30 13:40:46.000.634,Z:\SINAPgrid\ProjetoEdpDMSPiloto\BPR\FaultLocation\FaultLocationDMSPiloto.cbproj=Z:\SINAPgrid\ProjetoEdpDMSPiloto\BPR\FaultLocation\FaultLocation.cbproj</Transaction>
-    <Transaction>2019/10/30 13:40:46.000.604,Z:\SINAPgrid\ProjetoEdpDMSPiloto\BPR\FaultLocation\FaultLocationDMSPilotoPCH1.h=Z:\SINAPgrid\ProjetoEdpDMSPiloto\BPR\FaultLocation\FaultLocationPCH1.h</Transaction>
-    <Transaction>2019/10/30 13:40:59.000.759,Z:\SINAPgrid\ProjetoEdpDMSPiloto\BPR\FaultLocation\FaultLocationDMSPiloto.h=Z:\SINAPgrid\ProjetoEdpDMSPiloto\BPR\FaultLocation\FaultLocation.h</Transaction>
-    <Transaction>2019/10/30 13:40:59.000.759,Z:\SINAPgrid\ProjetoEdpDMSPiloto\BPR\FaultLocation\FaultLocationDMSPiloto.cpp=Z:\SINAPgrid\ProjetoEdpDMSPiloto\BPR\FaultLocation\FaultLocation.cpp</Transaction>
+    <Transaction>2019/10/30 13:40:46.000.634,Z:\SINAPgrid\ProjetoEdpDMSPiloto\BPR\FaultLocation\FaultLocation.cbproj=Z:\SINAPgrid\ProjetoEdpDMSPiloto\BPR\FaultLocation\FaultLocationDMSPiloto.cbproj</Transaction>
+    <Transaction>2019/10/30 13:40:46.000.604,Z:\SINAPgrid\ProjetoEdpDMSPiloto\BPR\FaultLocation\FaultLocationPCH1.h=Z:\SINAPgrid\ProjetoEdpDMSPiloto\BPR\FaultLocation\FaultLocationDMSPilotoPCH1.h</Transaction>
+    <Transaction>2019/10/30 13:40:59.000.759,Z:\SINAPgrid\ProjetoEdpDMSPiloto\BPR\FaultLocation\FaultLocation.cpp=Z:\SINAPgrid\ProjetoEdpDMSPiloto\BPR\FaultLocation\FaultLocationDMSPiloto.cpp</Transaction>
+    <Transaction>2019/10/30 13:40:59.000.759,Z:\SINAPgrid\ProjetoEdpDMSPiloto\BPR\FaultLocation\FaultLocation.h=Z:\SINAPgrid\ProjetoEdpDMSPiloto\BPR\FaultLocation\FaultLocationDMSPiloto.h</Transaction>
     <Transaction>2019/10/30 14:15:40.000.601,Z:\SINAPgrid\ProjetoEdpDMSPiloto\Fontes\FaultLocation\Auxiliares\TFormExportaBlocos.cpp=</Transaction>
     <Transaction>2019/10/30 14:15:52.000.937,=Z:\SINAPgrid\ProjetoEdpDMSPiloto\Fontes\FaultLocation\Auxiliares\TFormExportaBlocos.cpp</Transaction>
     <Transaction>2019/10/30 14:22:31.000.157,Z:\SINAPgrid\ProjetoEdpDMSPiloto\Fontes\FaultLocation\Auxiliares\TFormExportaBlocos.cpp=</Transaction>
@@ -194,17 +194,17 @@
     <Transaction>2019/10/30 14:23:29.000.795,Z:\SINAPgrid\ProjetoEdpDMSPiloto\Fontes\FaultLocation\EstrategiaEvolutiva\Forms\TFormProgressBar.cpp=</Transaction>
     <Transaction>2019/10/30 14:24:19.000.460,Z:\SINAPgrid\ProjetoEdpDMSPiloto\Fontes\FaultLocation\TFormFaultLocation.cpp=</Transaction>
     <Transaction>2019/10/30 14:25:59.000.532,=Z:\SINAPgrid\ProjetoEdpDMSPiloto\Fontes\FaultLocation\TFormFaultLocation.cpp</Transaction>
-    <Transaction>2019/10/30 14:29:40.000.098,=Z:\SINAPgrid\ProjetoEdpDMSPiloto\Fontes\FaultLocation\Auxiliares\TFormExportaLigacoes.cpp</Transaction>
     <Transaction>2019/10/30 14:29:40.000.046,=Z:\SINAPgrid\ProjetoEdpDMSPiloto\Fontes\FaultLocation\Auxiliares\TFormExportaBlocos.cpp</Transaction>
     <Transaction>2019/10/30 14:29:40.000.173,=Z:\SINAPgrid\ProjetoEdpDMSPiloto\Fontes\FaultLocation\Auxiliares\TFormPtosEquidistantes.cpp</Transaction>
+    <Transaction>2019/10/30 14:29:40.000.098,=Z:\SINAPgrid\ProjetoEdpDMSPiloto\Fontes\FaultLocation\Auxiliares\TFormExportaLigacoes.cpp</Transaction>
     <Transaction>2019/11/16 11:47:07.000.838,=Z:\SINAPgrid\ProjetoEdpDMSPiloto\BPR\FaultLocation\Unit1.cpp</Transaction>
-    <Transaction>2019/11/16 11:47:45.000.975,Z:\SINAPgrid\ProjetoEdpDMSPiloto\Fontes\FaultLocation\Equipamentos\TMedidorInteligente.cpp=Z:\SINAPgrid\ProjetoEdpDMSPiloto\BPR\FaultLocation\Unit1.cpp</Transaction>
-    <Transaction>2019/11/16 11:47:45.000.975,Z:\SINAPgrid\ProjetoEdpDMSPiloto\Fontes\FaultLocation\Equipamentos\TMedidorInteligente.h=Z:\SINAPgrid\ProjetoEdpDMSPiloto\BPR\FaultLocation\Unit1.h</Transaction>
+    <Transaction>2019/11/16 11:47:45.000.975,Z:\SINAPgrid\ProjetoEdpDMSPiloto\BPR\FaultLocation\Unit1.h=Z:\SINAPgrid\ProjetoEdpDMSPiloto\Fontes\FaultLocation\Equipamentos\TMedidorInteligente.h</Transaction>
+    <Transaction>2019/11/16 11:47:45.000.975,Z:\SINAPgrid\ProjetoEdpDMSPiloto\BPR\FaultLocation\Unit1.cpp=Z:\SINAPgrid\ProjetoEdpDMSPiloto\Fontes\FaultLocation\Equipamentos\TMedidorInteligente.cpp</Transaction>
     <Transaction>2019/11/16 11:57:48.000.468,=Z:\SINAPgrid\ProjetoEdpDMSPiloto\BPR\FaultLocation\Unit1.cpp</Transaction>
-    <Transaction>2019/11/16 11:58:12.000.354,Z:\SINAPgrid\ProjetoEdpDMSPiloto\Fontes\FaultLocation\Equipamentos\TMedidorInteligenteBalanco.h=Z:\SINAPgrid\ProjetoEdpDMSPiloto\BPR\FaultLocation\Unit1.h</Transaction>
-    <Transaction>2019/11/16 11:58:12.000.354,Z:\SINAPgrid\ProjetoEdpDMSPiloto\Fontes\FaultLocation\Equipamentos\TMedidorInteligenteBalanco.cpp=Z:\SINAPgrid\ProjetoEdpDMSPiloto\BPR\FaultLocation\Unit1.cpp</Transaction>
+    <Transaction>2019/11/16 11:58:12.000.354,Z:\SINAPgrid\ProjetoEdpDMSPiloto\BPR\FaultLocation\Unit1.h=Z:\SINAPgrid\ProjetoEdpDMSPiloto\Fontes\FaultLocation\Equipamentos\TMedidorInteligenteBalanco.h</Transaction>
+    <Transaction>2019/11/16 11:58:12.000.354,Z:\SINAPgrid\ProjetoEdpDMSPiloto\BPR\FaultLocation\Unit1.cpp=Z:\SINAPgrid\ProjetoEdpDMSPiloto\Fontes\FaultLocation\Equipamentos\TMedidorInteligenteBalanco.cpp</Transaction>
     <Transaction>2019/11/19 09:23:01.000.477,=Z:\SINAPgrid\ProjetoEdpDMSPiloto\BPR\FaultLocation\Unit1.cpp</Transaction>
-    <Transaction>2019/11/19 09:23:56.000.747,Z:\SINAPgrid\ProjetoEdpDMSPiloto\BPR\FaultLocation\Unit1.cpp=Z:\SINAPgrid\ProjetoEdpDMSPiloto\Fontes\FaultLocation\AlgoritmoDMS3\TAlgoritmoDMS3.cpp</Transaction>
-    <Transaction>2019/11/19 09:23:56.000.747,Z:\SINAPgrid\ProjetoEdpDMSPiloto\BPR\FaultLocation\Unit1.h=Z:\SINAPgrid\ProjetoEdpDMSPiloto\Fontes\FaultLocation\AlgoritmoDMS3\TAlgoritmoDMS3.h</Transaction>
+    <Transaction>2019/11/19 09:23:56.000.747,Z:\SINAPgrid\ProjetoEdpDMSPiloto\Fontes\FaultLocation\AlgoritmoDMS3\TAlgoritmoDMS3.cpp=Z:\SINAPgrid\ProjetoEdpDMSPiloto\BPR\FaultLocation\Unit1.cpp</Transaction>
+    <Transaction>2019/11/19 09:23:56.000.747,Z:\SINAPgrid\ProjetoEdpDMSPiloto\Fontes\FaultLocation\AlgoritmoDMS3\TAlgoritmoDMS3.h=Z:\SINAPgrid\ProjetoEdpDMSPiloto\BPR\FaultLocation\Unit1.h</Transaction>
   </Transactions>
 </BorlandProject>
